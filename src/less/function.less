@@ -1,0 +1,42 @@
+.clearfix {
+    &:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+    *zoom: 1;
+}
+
+.hide {
+    display: none;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.rela {
+    position: relative;
+}
+
+.abs {
+    position: absolute;
+}
+
+.f-width100 {
+    width: 100%;
+}
+
+.f-width100-add-1 {
+    width: calc(~"100% + 1px");
+}
+
+.f-mg-0-imp {
+    margin: 0!important;
+}
