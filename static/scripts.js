@@ -348,13 +348,15 @@ function initContainer() {
     configurationElm();
 }
 $(document).ready(function () {
-    CKEDITOR.disableAutoInline = true;
+    // if(CKEDITOR) {
+    //     CKEDITOR.disableAutoInline = true;
+    //     var contenthandle = CKEDITOR.replace('contenteditor', {
+    //         language: 'zh-cn',
+    //         // contentsCss: ['css/bootstrap-combined.min.css'],
+    //         allowedContent: true
+    //     });
+    // }
     restoreData();
-    var contenthandle = CKEDITOR.replace('contenteditor', {
-        language: 'zh-cn',
-        // contentsCss: ['css/bootstrap-combined.min.css'],
-        allowedContent: true
-    });
     $("body").css("min-height", $(window).height() - 90);
     $(".demo").css("min-height", $(window).height() - 160);
     $(".sidebar-nav .lyrow").draggable({
@@ -362,7 +364,6 @@ $(document).ready(function () {
         helper: "clone",
         handle: ".drag",
         start: function (e, t) {
-            debugger
             if (!startdrag) stopsave++;
             startdrag = 1;
         },
@@ -430,6 +431,7 @@ $(document).ready(function () {
         downloadHtmlLayout();
         return false
     });
+// ooo /////////////////////////////////////////////////////////////////////////
     $("#edit").click(function () {
         $("body").removeClass("devpreview sourcepreview");
         $("body").addClass("edit");
@@ -437,6 +439,7 @@ $(document).ready(function () {
         $(this).addClass("active");
         return false
     });
+// ooo /////////////////////////////////////////////////////////////////////////
     $("#clear").click(function (e) {
         e.preventDefault();
         clearDemo()
@@ -448,6 +451,7 @@ $(document).ready(function () {
         $(this).addClass("active");
         return false
     });
+////////////////////////////////////////////////////////////////////////////////
     $("#sourcepreview").click(function () {
         $("body").removeClass("edit");
         $("body").addClass("devpreview sourcepreview");
@@ -455,6 +459,7 @@ $(document).ready(function () {
         $(this).addClass("active");
         return false
     });
+////////////////////////////////////////////////////////////////////////////////
     $("#fluidPage").click(function (e) {
         e.preventDefault();
         changeStructure("container", "container-fluid");

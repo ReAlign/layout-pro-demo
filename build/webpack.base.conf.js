@@ -39,8 +39,10 @@ module.exports = {
       '@': resolve('src/js'),
       'router': resolve('src/js/router'),
       'tools': resolve('src/js/tools'),
+      // 'mixins': resolve('src/js/mixins'),
       'components': resolve('src/js/components'),
       'common': resolve('src/js/common'),
+      'lessRoot': resolve('src/less'),
     }
   },
   module: {

@@ -19,9 +19,6 @@
             <div class="modal-header">
                 <a class="close" data-dismiss="modal">×</a>
                 <h3>下载</h3>
-                <div id="download-layout">
-                    <div class="container-fluid"></div>
-                </div>
             </div>
             <div class="modal-body">
                 <p>已在下面生成干净的HTML, 可以复制粘贴代码到你的项目.</p>
@@ -57,7 +54,7 @@
 <script>
 
 export default {
-    name: 'lp-toolbar',
+    name: 'lp-hide-modal',
     data() {
         return {
             //

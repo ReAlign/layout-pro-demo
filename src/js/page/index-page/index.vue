@@ -9,7 +9,7 @@
                 <lp-drag-area />
             </div>
         </div>
-        <lp-toolbar />
+        <lp-hide-modal />
     </div>
 </template>
 
@@ -22,7 +22,7 @@ import Config from './config';
 import LpNav from 'components/lp-nav/index';
 import LpLeftMenu from 'components/lp-left-menu/index';
 import LpDragArea from 'components/lp-drag-area/index';
-import LpToolbar from 'components/lp-toolbar/index';
+import LpHideModal from 'components/lp-hide-modal/index';
 
 export default {
     name: 'index-page',
@@ -30,7 +30,7 @@ export default {
         'lp-nav': LpNav,
         'lp-left-menu': LpLeftMenu,
         'lp-drag-area': LpDragArea,
-        'lp-toolbar': LpToolbar
+        'lp-hide-modal': LpHideModal
     },
     data() {
         return {

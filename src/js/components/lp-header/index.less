@@ -1,0 +1,47 @@
+@import '~lessRoot/component-var.less';
+@font-height: 24px;
+.m-lp-header {
+    display: flex;
+    flex-wrap: nowrap;
+    height: @header-height;
+    color: #fff;
+    border-bottom: 1px solid @normal-border-c;
+    .el-brand {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-basis: @left-menu-width;
+        flex-grow: 0;
+        flex-shrink: 0;
+
+        background: @logo-bg;
+        .el-sys-title {
+            height: @font-height;
+            & > .u-title {
+                font-size: 20px;
+                font-weight: bold;
+                line-height: @font-height;
+            }
+            .u-el-tag {
+                vertical-align: bottom;
+                color: #fff;
+                border: 1px solid #fff;
+                background-color: transparent;
+            }
+        }
+    }
+    .m-header-btn-wrap {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: calc(~"100% - @{left-menu-width} - @{dragarea-mg}");
+        margin-left: @dragarea-mg;
+        .el-button-group {
+            margin-right: 10px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

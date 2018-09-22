@@ -1,0 +1,69 @@
+@import '~lessRoot/component-var.less';
+.sidebar-nav {
+    position: fixed;
+    width: @left-menu-width;
+    left: 0;
+    bottom: 0;
+    top: @header-height;
+    background: #fff;
+    border-right: 1px solid @normal-border-c;
+    padding: 9px 0;
+    z-index: 10;
+
+    .transition-mixin;
+    .nav-header {
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: normal;
+        color: @font-c;
+    }
+    .nav-header span.label {
+        font-size: 10px;
+        /*padding-bottom:0;
+        */
+        position: relative;
+        top: -1px;
+    }
+    .nav-header .popover {
+        color: #999;
+        text-shadow: none;
+    }
+
+    .accordion-group {
+        border:none;
+    }
+    li {
+        line-height:25px;
+    }
+     .box {
+        line-height:25px;
+        width:170px;
+        height:25px;
+    }
+     .preview {
+        display:block;
+        color:#666;
+        font-size:12px;
+        line-height:22px;
+    }
+     .preview input {
+        width:90px;
+        padding:0 10px;
+        background:#bbb;
+        font-size:10px;
+        color:#999;
+        line-height:20px;
+        height:20px;
+        position:relative;
+        top:-1px;
+    }
+     .view {
+        display:none;
+    }
+    .remove, .configuration {
+        display:none;
+    }
+    .boxes {
+        display:none;
+    }
+}

@@ -3,7 +3,7 @@
         <ul class="nav nav-list accordion-group">
             <li class="nav-header">
                 <div class="pull-right popover-info">
-                    <i class="icon-question-sign "></i>
+                    <i class="el-icon-question"></i>
                     <div class="popover fade right">
                         <div class="arrow"></div>
                         <h3 class="popover-title">功能</h3>
@@ -12,7 +12,9 @@
                         </div>
                     </div>
                 </div>
-                <i class="icon-plus icon-white"></i> 布局设置 </li>
+                <i class="icon-plus icon-white"></i>
+                布局设置
+            </li>
             <li style="display: list-item;" class="rows" id="estRows">
                 <div class="lyrow ui-draggable">
                     <a href="#close" class="remove label label-important">
@@ -96,7 +98,7 @@
             <li class="nav-header">
                 <i class="icon-plus icon-white"></i> 基本CSS
                 <div class="pull-right popover-info">
-                    <i class="icon-question-sign "></i>
+                    <i class="el-icon-question"></i>
                     <div class="popover fade right">
                         <div class="arrow"></div>
                         <h3 class="popover-title">帮助</h3>
@@ -581,7 +583,7 @@
             <li class="nav-header">
                 <i class="icon-plus icon-white"></i> 组件
                 <div class="pull-right popover-info">
-                    <i class="icon-question-sign "></i>
+                    <i class="el-icon-question"></i>
                     <div class="popover fade right">
                         <div class="arrow"></div>
                         <h3 class="popover-title">帮助</h3>
@@ -1111,7 +1113,7 @@
                 <i class="icon-plus icon-white"></i> 交互组件
                 <span class="label label-important">NEW!</span>
                 <div class="pull-right popover-info">
-                    <i class="icon-question-sign "></i>
+                    <i class="el-icon-question"></i>
                     <div class="popover fade right">
                         <div class="arrow"></div>
                         <h3 class="popover-title">帮助</h3>
@@ -1412,7 +1414,7 @@
 </template>
 
 <script>
-
+import './index.less';
 export default {
     name: 'left-menu',
     data() {

@@ -1,0 +1,21 @@
+@font-c: #303133;
+@logo-bg: @font-c;
+@normal-border-c: #e6e6e6;
+@bor-r: 4px;
+
+// main
+@header-height: 60px;
+
+@left-menu-width: 240px;
+@dragarea-mg: 12px;
+
+.transition-mixin() {
+    transition: all .3s ease-in-out;
+}
+
+.linear-gradient(@angle:left, @start:#000, @stop:#fff) {
+    background: -webkit-linear-gradient(@angle, @start, @stop);
+    background: -moz-linear-gradient(@angle, @start, @stop);
+    background: -o-linear-gradient(@angle, @start, @stop);
+    background: linear-gradient(@angle, @start, @stop);
+}

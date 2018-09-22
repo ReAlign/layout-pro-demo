@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import './less/index.less';
+
 export default {
     name: 'app'
 };
