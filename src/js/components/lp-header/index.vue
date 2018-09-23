@@ -47,10 +47,10 @@
             center>
             <el-input
                 type="textarea"
-                readonly=true
+                :readonly="true"
                 resize="none"
                 :autosize="{ minRows: 6, maxRows: 26}"
-                placeholder="请输入内容"
+                placeholder=""
                 v-model="downloadModalValue">
             </el-input>
         </el-dialog>

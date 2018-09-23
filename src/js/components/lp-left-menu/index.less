@@ -1,14 +1,13 @@
 @import '~lessRoot/component-var.less';
+@el-submenu-h: 36px;
 .sidebar-nav {
-    position: fixed;
+    position: fixed!important;
     width: @left-menu-width;
     left: 0;
     bottom: 0;
     top: @header-height;
     background: #fff;
     border-right: 1px solid @normal-border-c;
-    padding: 9px 0;
-    z-index: 10;
 
     .transition-mixin;
     .nav-header {
@@ -63,7 +62,17 @@
     .remove, .configuration {
         display:none;
     }
-    .boxes {
-        display:none;
+    // .boxes {
+    //     display:none;
+    // }
+
+    .el-submenu__title {
+        height: @el-submenu-h;
+        line-height: @el-submenu-h;
+
+        padding: 0;
+    }
+    .el-menu.el-menu--inline {
+        margin: 12px 20px 0 28px;
     }
 }

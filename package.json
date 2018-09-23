@@ -16,7 +16,10 @@
     "vue": "2.5.2",
     "vue-router": "3.0.1",
     "element-ui": "2.4.7",
-    "bootstrap": "3.3.7"
+    "bootstrap": "3.3.7",
+    "jquery": "2.1.1",
+    "jquery-ui": "1.10.4",
+    "components-jquery-htmlclean": "1.4.0"
   },
   "devDependencies": {
     "autoprefixer": "7.1.2",
@@ -51,7 +54,7 @@
     "eslint-plugin-node": "5.2.0",
     "eslint-plugin-promise": "3.4.0",
     "eslint-plugin-standard": "3.0.1",
-    "extract-text-webpack-plugin": "2.0.0",
+    "extract-text-webpack-plugin": "2.1.2",
     "mini-css-extract-plugin": "0.4.1",
     "file-loader": "1.1.4",
     "friendly-errors-webpack-plugin": "1.6.1",

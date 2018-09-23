@@ -1,3 +1,8 @@
+import 'bootstrap';
+import $ from 'jquery';
+import 'jquery-ui';
+import 'components-jquery-htmlclean';
+
 const M = {
     VARS: {
         layouthistory: null,
@@ -347,8 +352,8 @@ M.ready = () => {
         $('body.edit .demo').on('click', '[data-target=#editorModal]', M._onEditorModal);
         // 保存
         $('#savecontent').click(M._onSaveContent);
-        // 分享弹窗
-        $('[data-target=#shareModal]').click(M._onShareModal);
+        // // 分享弹窗
+        // $('[data-target=#shareModal]').click(M._onShareModal);
         // 下载
         $('#download').click(M._onDownload);
         // 下载html
@@ -401,10 +406,10 @@ M._onDownoadModal = function() {
     // e.preventDefault();
     return M.downloadLayoutSrc();
 };
-M._onShareModal = (e) => {
-    e.preventDefault();
-    M.handleSaveLayout();
-};
+// M._onShareModal = (e) => {
+//     e.preventDefault();
+//     M.handleSaveLayout();
+// };
 M._onDownload = () => {
     M.downloadLayout();
     return false;

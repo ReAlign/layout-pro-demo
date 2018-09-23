@@ -1,4 +1,5 @@
 'use strict'
+require('jquery')
 const utils = require('./utils')
 const webpack = require('webpack')
 const config = require('../config')
@@ -47,6 +48,11 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     }
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      '$': 'jquery',
+      'jQuery': 'jquery',
+      'window.jQuery': 'jquery'
+    }),
     new webpack.DefinePlugin({
       'process.env': require('../config/dev.env')
     }),
