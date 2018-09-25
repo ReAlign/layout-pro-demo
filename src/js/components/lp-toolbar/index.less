@@ -1,0 +1,15 @@
+@import '~lessRoot/component-var.less';
+
+.m-header-btn-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: calc(~"100% - @{left-menu-width} - @{dragarea-mg}");
+    margin-left: @dragarea-mg;
+    .el-button-group {
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

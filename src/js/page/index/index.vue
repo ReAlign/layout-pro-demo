@@ -10,7 +10,6 @@
                 <div id="download-layout">
                     <div class="container-fluid"></div>
                 </div>
-                <lp-hide-modal />
             </el-main>
         </el-container>
     </el-container>
@@ -23,14 +22,12 @@ import M from 'tools/m';
 import LpHeader from 'components/lp-header/index';
 import LpLeftMenu from 'components/lp-left-menu/index';
 import LpDragArea from 'components/lp-drag-area/index';
-import LpHideModal from 'components/lp-hide-modal/index';
 
 export default {
     components: {
         'lp-header': LpHeader,
         'lp-left-menu': LpLeftMenu,
         'lp-drag-area': LpDragArea,
-        'lp-hide-modal': LpHideModal,
     },
     data() {
         return {

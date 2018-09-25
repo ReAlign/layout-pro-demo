@@ -406,10 +406,9 @@ M._onDownoadModal = function() {
     // e.preventDefault();
     return M.downloadLayoutSrc();
 };
-// M._onShareModal = (e) => {
-//     e.preventDefault();
-//     M.handleSaveLayout();
-// };
+M._onSaveModal = () => {
+    M.handleSaveLayout();
+};
 M._onDownload = () => {
     M.downloadLayout();
     return false;
