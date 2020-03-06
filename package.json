@@ -18,7 +18,7 @@
     "element-ui": "2.4.7",
     "bootstrap": "3.3.7",
     "jquery": "2.1.1",
-    "jquery-ui": "1.10.4",
+    "jquery-ui": "1.12.1",
     "components-jquery-htmlclean": "1.4.0"
   },
   "devDependencies": {
